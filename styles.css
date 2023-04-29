@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-100:#FFD700;
+    --primary-200:#ddb900;
+    --primary-300:#917800;
+    --accent-100:#c49216;
+    --accent-200:#5e3b00;
+    --text-100:#dcdcdc;
+    --text-200:#929292;
+    --bg-100:#1E1E1E;
+    --bg-200:#2d2d2d;
+    --bg-300:#454545;
+}
+
+body {
+    font-family: 'DynaPuff', cursive;
+    background-color: var(--bg-100);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-100);
+}
+
+/* NavBar */
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background: var(--bg-100);
+    z-index: 10;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 05%;
+}
+
+.nav-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 2000px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 600px;
+    z-index: 10;
+}
+
+.left-container {
+    justify-content: flex-start;
+}
+
+.right-container {
+    justify-content: flex-end;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    flex-basis: 10px;
+    align-items: center;
+}
+
+.nav-right a {
+    display: block;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.nav-right a:hover {
+    color: var(--primary-100);
+    transition: background 0.3s ease-out;
+}
+
+.clickable {
+    border: 2px solid var(--text-200);
+    border-radius: 20px;
+}
+
+.clickable:hover {
+    border: 2px solid var(--text-200);
+    background-color: var(--text-200);
+    transition: all 0.4s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    color: var(--primary-100);
+}
+
+/* End NavBar */
+
+.section-1, .section-2, .section-3, .section-4 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    width: 70%;
+    color: var(--text-200);
+}
+
+/* Section 1 */
+
+.section-1 h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-1 p {
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+
+#content1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+#content2::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.icon-background {
+    display: flex;
+    position: absolute;
+    font-size: 400px;
+    top: -17%;
+    left: 60%;
+    opacity: 0.4;
+    color: var(--primary-200);
+    z-index: -1;
+}
+
+.clickable-2 {
+    font-size: 40px;
+    padding: 20px;
+    border: 2px solid var(--text-100);
+    border-radius: 50px;
+}
+
+.clickable-2:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+    transition: all 0.4s ease-in-out;
+}
+
+/* End Section 1 */
+
+/* Position the image container */
+.container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-bottom: 0;
+}
+
+/* Add a pointer when hovering over thumbnail images */
+.column {
+    cursor: pointer;
+}
+
+.images {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.demo {
+    width: 100%;
+}
+
+/* Next & Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Next button moving to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover effect, add a background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slideshow number */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image's text */
+.caption-container {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 20px 16px;
+    margin-bottom: 4px;
+    color: var(--text-100);
+    border-radius: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency for thumbnail images */
+.demo {
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/* END of SlideSHow */
+
+/* Section 2 */
+
+.section-2 {
+    width: 100%;
+    height: 1300px;
+    margin-top: 0;
+    padding-top: 100px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    box-shadow: none;
+
+    --mask:
+        radial-gradient(167.86px at 50% calc(100% - 230.55px),#000 99%,#0000 101%) calc(50% - 174px) 0/348px 100%,
+        radial-gradient(167.86px at 50% calc(100% + 143.55px),#0000 99%,#000 101%) 50% calc(100% - 87px)/348px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.container-section-2 {
+    display: block;
+    margin: auto;
+    margin-right: 100px;
+    margin-top: 100px;
+    width: 40%;
+}
+
+.img-section-2 {
+    display: flex;
+    float: left;
+    margin: 0 300px;
+    width: 28%;
+    border-radius: 10%;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 1% 100%, 0 14%);
+}
+
+.section-2 h4 {
+    color: var(--primary-200);
+}
+
+.section-2 h1 {
+    color: var(--text-100);
+    font-size: 40px;
+}
+
+.section-2 p {
+    color: var(--text-100);
+    margin: 60px;
+    font-size: 22px;
+}
+
+.company-logos {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: auto auto auto;
+    color: var(--text-100);
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: 350px;
+    width: 20%;
+    cursor: default;
+}
+
+/* End Section 2 */
+
+/* Section 3 */
+
+.section-3 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.container-section-3 {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+.video-section-3 {
+    display: flex;
+    margin: auto;
+    /* width: 34%; */
+    border-radius: 10%;
+}
+
+/* .container-2-section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+} */
+
+.container-2-section-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.container-2-section-3 div p {
+    align-items: center;
+}
+
+.start i {
+    font-size: 100px;
+    color: var(--primary-100);
+    padding-bottom: 40px;
+}
+
+.launch i {
+    font-size: 100px;
+    color: var(--primary-100);
+    padding-bottom: 40px;
+}
+
+.grow i {
+    font-size: 100px;
+    color: var(--primary-100);
+    padding-bottom: 40px;
+}
+
+.retain i {
+    font-size: 100px;
+    color: var(--primary-100);
+    padding-bottom: 40px;
+}
+
+.section-3 h1 {
+    color: var(--text-100);
+    font-size: 40px;
+}
+
+.section-3 p {
+    color: var(--text-100);
+    margin: 60px;
+    font-size: 22px;
+}
+
+/* End Section 3 */
+
+/* Section 4 */
+
+.section-4 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    box-shadow: none; 
+
+    --mask:
+        radial-gradient(167.86px at 50% 230.55px,#000 99%,#0000 101%) calc(50% - 174px) 0/348px 51% repeat-x,
+        radial-gradient(167.86px at 50% -143.55px,#0000 99%,#000 101%) 50% 87px/348px calc(51% - 87px) repeat-x,
+        radial-gradient(167.86px at 50% calc(100% - 230.55px),#000 99%,#0000 101%) calc(50% - 174px) 100%/348px 51% repeat-x,
+        radial-gradient(167.86px at 50% calc(100% + 143.55px),#0000 99%,#000 101%) 50% calc(100% - 87px)/348px calc(51% - 87px) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.container-section-4 {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+.container-2-section-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 2rem;
+    justify-content: right;
+    align-items: right;
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.container-2-section-4 div p {
+    text-align: left;
+}
+
+.section-4-img-1 img {
+    text-align: left;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.section-4-img-2 img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.section-4-img-3 img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.section-4-img-4 img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.section-4 h1 {
+    color: var(--bg-100);
+    font-size: 60px;
+}
+
+.section-4 h3 {
+    color: var(--bg-100);
+    font-size: 30px;
+}
+
+.section-4 h4 {
+    color: var(--primary-100);
+}
+
+.section-4 p {
+    color: var(--text-200);
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* End Section 4 */
+
+/* Footer */
+
+.footer-line {
+    border: 2px solid var(--primary-200);
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+}
+
+.footer-text, h4, h5 {
+    color: var(--text-200);
+    text-align: center;
+    padding: 20px 0;
+}
+

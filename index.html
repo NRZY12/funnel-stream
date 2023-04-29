@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>THE FUNNEL STREAM</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/0bec7b33d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav id="navbar" class="nav">
+        <div class="nav-container">
+            <div class="left-container">
+                <ul class="nav-left">
+                    <li><a class="logo" href="#"><i class="fa-solid fa-filter-circle-dollar"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="right-container">
+                <ul class="nav-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#blog">Our Blog</a></li>
+
+                    <li><a href="#" class="clickable">Request Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of NavBar -->
+
+    <!-- Section 1 -->
+    <section class="section-1" id="home">
+        <div class="icon-background"><i class="fa-solid fa-filter-circle-dollar"></i></div>
+            <h1 class="section-1-headline">Let's Grow Your Streaming Business</h1>
+            <p class="section-1-p">
+                <span id="content1">
+                    Set up subscriptions, rentals, or one-time buys for access to your VOD and live streams.
+                </span>
+                <span id="content2">
+                    Create exclusive experiences for your subscribers with coupons and promotions.
+                </span>
+            </p>
+            <div><a href="#" class="clickable-2">Start Free Trial <i class="fa-solid fa-arrow-right-to-arc"></i></a></div>
+    </section>
+
+    <!-- Container for the images Slideshow -->
+    <div class="container">
+
+        <!-- Full-width images with numbers on them! -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img class="images" src="./img/1.jpg">
+        </div> 
+        
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img class="images" src="./img/2.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img class="images" src="./img/3.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img class="images" src="./img/4.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img class="images" src="./img/5.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img class="images" src="./img/6.jpg">
+        </div>
+
+        <!-- Next and Previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image Text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail Images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./img/1.jpg" onclick="currentSlide(1)" alt="Connect Yourself with the World">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/2.jpg" onclick="currentSlide(2)" alt="Imagine Yourself">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/3.jpg" onclick="currentSlide(3)" alt="Try it for yourself">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/4.jpg" onclick="currentSlide(4)" alt="Make it happen">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/5.jpg" onclick="currentSlide(5)" alt="Make it big">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./img/6.jpg" onclick="currentSlide(6)" alt="Create what's unique by yourself">
+            </div>
+        </div>
+    </div>
+
+    <section class="section-2" id="platform">
+        <img class="img-section-2" src="./img/platforms.jpg" alt="Filming in the Funnel Studio">
+        <div class="container-section-2">
+            <h4>Our Platform</h4>
+            <h1>We're trusted By Multiple Platforms</h1>
+            <p>
+                Expand the reach of your digital market by using the right and right way. It will make your traffic go up and profit for your business
+            </p>
+        </div>
+
+        <div class="company-logos">
+            <div href="#"><i class="fa-brands fa-apple"></i></div>
+            <div href="#"><i class="fa-solid fa-hat-wizard"></i></div>
+            <div href="#"><i class="fa-brands fa-twitch"></i></div>
+            <div href="#"><i class="fa-brands fa-padlet"></i></div>
+            <div href="#"><i class="fa-brands fa-android"></i></div>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <h4>How It Works</h4>
+        <div class="container-section-3">
+            <h1>It's How We Help You Grow With Us</h1>
+            <p>
+                The Funnel Stream ecosystem is designed to help you generate profit. Set up complete sales and marketing Funnel's with ease using the Funnel built-in marketing
+            </p>
+            <video class="video-section-3" width="420" height="240" controls>
+                <source src="./img/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container-2-section-3" id="features">
+            <div class="start">
+                <i class="fa-solid fa-meteor"></i>
+                <h3>Start</h3>
+                <p>
+                    One predictable fee, transparent pricing, and same-day setup.
+                </p>
+            </div>
+
+            <div class="launch">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Launch</h3>
+                <p>
+                    Launch your branded streaming service in just few simple steps.
+                </p>
+            </div>
+
+            <div class="grow">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Grow</h3>
+                <p>
+                    Unlock the true potential of your videos with The Funnel.
+                </p>
+            </div>
+
+            <div class="retain">
+                <i class="fa-solid fa-hands-asl-interpreting"></i>
+                <h3>Retain</h3>
+                <p>
+                    Tap into our knowledge base and stay ahead of the game.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4" id="blog">
+        <h4>Read Our Blog</h4>
+        <div class="container-section-4">
+            <h1>All You Need to Power Your Business</h1>
+            <p>
+                The Funnel Stream ecosystem is designed to help you generate profit. Set up complete sales and marketing Funnel's with ease using the Funnel built-in marketing
+            </p>
+        </div>
+        <div class="container-2-section-4">
+            <div class="section-4-img-1">
+                <img src="./img/section-4-1.jpg" alt="filming">
+                <h3>Start</h3>
+                <p>
+                    One predictable fee, transparent pricing, and same-day setup.
+                </p>
+            </div>
+
+            <div class="section-4-img-2">
+                <img src="./img/section-4-2.jpg" alt="filming">
+                <h3>Launch</h3>
+                <p>
+                    Launch your branded streaming service in just few simple steps.
+                </p>
+            </div>
+
+            <div class="section-4-img-3">
+                <img src="./img/section-4-3.jpg" alt="filming">
+                <h3>Grow</h3>
+                <p>
+                    Unlock the true potential of your videos with The Funnel.
+                </p>
+            </div>
+
+            <div class="section-4-img-4">
+                <img src="./img/section-4-4.jpg" alt="filming">
+                <h3>Retain</h3>
+                <p>
+                    Tap into our knowledge base and stay ahead of the game.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div class="footer-line"></div>
+    <div class="footer-text">
+        <h4>2023 THE FUNNEL STREAM - All rights reserved</h4>
+        <h5><em>Designed and Built by Abdennor El Khassam - Norman</em></h5>
+    </div>
+</footer>
+</html>

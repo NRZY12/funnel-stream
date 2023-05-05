@@ -521,6 +521,32 @@ a {
 
 /* End Section 4 */
 
+/* Section Trust for Customer Reviews */
+
+.trust {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.section-titles h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 100px 0;
+}
+
+.customer-review {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin:  20px;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    background-color: var(--primary-200);
+    color: var(--bg-300);
+}
+
 /* Footer */
 
 .footer-line {

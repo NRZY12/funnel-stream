@@ -524,16 +524,30 @@ a {
 /* Section Trust for Customer Reviews */
 
 .trust {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
+
+    height: 600px;
+}
+
+.client-img {
+    display: inline;
+    float: left;
+    width: 80px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .section-titles h1 {
     display: flex;
+    color: white;
     justify-content: center;
     margin: 0 0 100px 0;
+}
+
+.trust-section-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .customer-review {
@@ -545,6 +559,12 @@ a {
     border-radius: 10px;
     background-color: var(--primary-200);
     color: var(--bg-300);
+}
+
+.customer-review h5 {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
 }
 
 /* Footer */

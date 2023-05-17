@@ -317,7 +317,7 @@ a {
 
 .section-2 h1 {
     color: var(--text-100);
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .section-2 p {
@@ -418,7 +418,7 @@ a {
 
 .section-3 h1 {
     color: var(--text-100);
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .section-3 p {
@@ -606,6 +606,7 @@ a {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+    font-family: 'DynaPuff', cursive;
 }
 
 .footer-distributed .footer-left,
@@ -622,12 +623,6 @@ a {
 }
 
 /* The company logo */
-
-.footer-distributed h3 {
-	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
 
 .footer-distributed h3 span {
 	color:  lightseagreen;
@@ -772,6 +767,55 @@ a {
 /* MEDIA QUERIES */
 
 @media (max-width: 880px) {
+    .section-1, .section-2, .section-3, .section-4 {
+        display: block;
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 880px) {
+    .container-section-2 {
+        display: block;
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+
+    .img-section-2 {
+        display: none;
+        position: sticky;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin: 0 0 0 170px;
+    }
+
+    .section-2 h1 {
+        font-size: 40px;
+    }
+
+    .company-logos {
+        display: block;
+        margin: 100px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 880px) {
+    .trust {
+        margin: 0 0 1200px 0;
+    }
+    .trust-section-wrap {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 880px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -779,14 +823,14 @@ a {
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-distributed .footer-right {
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
 
